@@ -1,6 +1,8 @@
 import './Contact.css'
 
 const Contact = () => {
+  const basePath = import.meta.env.BASE_URL;
+
   return (
     <div className="contact">
       <div className="contact-content">
@@ -39,10 +41,10 @@ const Contact = () => {
         </div>
         <div className="contactCV">
           <div className="cv">
-            <img src="./assets/images/cv/cv.png" alt="Jeevons Cv" />
+            <img src={`${basePath}assets/images/cv/cv.png`} alt="Jeevons Cv" />
           </div>
           <div className="downloadCv">
-            <a href="./assets/images/cv/creativeCv_Jeevons3.0.pdf"  download>Télécharger CV</a>
+            <a href={`${basePath}assets/images/cv/creativeCv_Jeevons3.0.pdf`} download>Télécharger CV</a>
           </div>
         </div>
       </div>
@@ -50,4 +52,4 @@ const Contact = () => {
   )
 }
 
-export default Contact
+export default Contact;

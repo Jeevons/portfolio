@@ -1,12 +1,14 @@
 import { Link } from "react-router-dom";
 import "./Footer.css";
 
-const FooterLogo = () => (
+const FooterLogo = () => {
+  const basePath = import.meta.env.BASE_URL;
+  
   <div className="footer-logo">
     <Link to="/" className="logo hover-target">
-      <img src="./assets/logos/jeevonsLogo.png" alt="Jeevons Logo" />
+      <img src={`${basePath}assets/logos/jeevonsLogo.png`} alt="Jeevons Logo" />
     </Link>
-  </div>
-);
+  </div>;
+};
 
 export default FooterLogo;

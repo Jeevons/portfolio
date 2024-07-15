@@ -1,3 +1,5 @@
+const basePath = import.meta.env.BASE_URL;
+
 const projectsData = [
   {
     title: "Maufeb Mode",
@@ -13,7 +15,7 @@ const projectsData = [
       </>
     ),
     link: "https://www.maufeb-mode.com/",
-    imgSrc: "./assets/images/projets/maufeb.png",
+    imgSrc: `${basePath}assets/images/projets/maufeb.png`,
   },
   {
     title: "Jeevons Website",
@@ -32,7 +34,7 @@ const projectsData = [
       </>
     ),
     link: "/",
-    imgSrc: "./assets/images/projets/jeevonsWebsite.png",
+    imgSrc: `${basePath}assets/images/projets/jeevonsWebsite.png`,
   },
   {
     title: "Quantum Website",
@@ -54,7 +56,7 @@ const projectsData = [
       </>
     ),
     link: "https://quantum.2024.mmibut1.org/index.php",
-    imgSrc: "./assets/images/projets/quantum.png",
+    imgSrc: `${basePath}assets/images/projets/quantum.png`,
   },
 ];
 

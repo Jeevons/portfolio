@@ -1,7 +1,9 @@
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Projets.css";
 
 const Presentation = () => {
+  const basePath = import.meta.env.BASE_URL;
+
   return (
     <div className="Presentation">
       <div className="pres-container">
@@ -10,13 +12,13 @@ const Presentation = () => {
             <h1>Salut, moi c&apos;est Jevons</h1>
           </div>
           <div className="subtitle">
-            <h3>Developpeur Web en devenir</h3>
+            <h3>Développeur Web en devenir</h3>
           </div>
           <div className="text">
             <p>
               Bienvenue sur mon site internet, enchanté! Je suis étudiant en
-              deuxième année de Bachelor Développement Web. Je suis actuelement
-              à la recherche actuellement d&apos;une alternance.
+              deuxième année de Bachelor Développement Web. Je suis actuellement
+              à la recherche d&apos;une alternance.
             </p>
           </div>
 
@@ -36,7 +38,7 @@ const Presentation = () => {
         </div>
         <div className="right box img">
           <img
-            src="./assets/images/projets/cartoonJee2.png"
+            src={`${basePath}assets/images/projets/cartoonJee2.png`}
             alt="presentation"
           />
         </div>
