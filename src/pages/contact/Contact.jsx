@@ -7,7 +7,7 @@ const Contact = () => {
     <div className="contact">
       <div className="contact-content">
         <h2>Contactez moi</h2>
-        <p>Je suis actuellement à la recherche d&apos; contrat d&apos;alternance de 2 ans.</p>
+        <p>Je suis actuellement à la recherche d&apos;un alternance d&apos;une durée de 2 ans.</p>
       </div>
       <div className="contact-container">
         <div className="contactInfo">
