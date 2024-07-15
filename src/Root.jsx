@@ -1,4 +1,4 @@
-import { useLocation, Redirect } from 'react-router-dom';
+import { useLocation, Navigate } from 'react-router-dom'; // Remplacer Redirect par Navigate
 import App from './App';
 
 const Root = () => {
@@ -9,7 +9,7 @@ const Root = () => {
   const redirect = searchParams.get('redirect');
 
   if (redirect) {
-    return <Redirect to="/projets" />;
+    return <Navigate to="/projets" />;
   }
 
   return <App />;
