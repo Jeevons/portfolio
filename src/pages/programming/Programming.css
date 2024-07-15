@@ -1,0 +1,99 @@
+body {
+  font-family: "Century Gothic", 'Lato', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+
+.et-hero-tabs {
+  z-index: 15;
+}
+
+.et-hero-tabs, .et-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  background: #000000;
+  text-align: center;
+  padding: 0 2em;
+}
+.et-hero-tabs h1, .et-slide h1 {
+  font-size: 2rem;
+  margin: 0;
+  letter-spacing: 1rem;
+}
+.et-hero-tabs h3, .et-slide h3 {
+  font-size: 1rem;
+  letter-spacing: 0.3rem;
+  opacity: 0.6;
+}
+.et-hero-tabs-container {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background: #000000;
+  z-index: 1;
+}
+.et-hero-tabs-container--top {
+  position: fixed;
+  top: 80px;
+  background-color: #e6e5dd;
+  transition: background-color 0.2s ease, top 0.2s ease, color 0.2s ease, visibility 0.2s ease;
+  z-index: 9999999999999;
+}
+
+@media only screen and (max-width: 500px) {
+  .et-hero-tabs-container--top a {
+      font-size: .6rem;
+  }
+}
+
+.et-hero-tabs-container--top > .et-hero-tab {
+  color: #000000;
+}
+
+.et-main {
+  margin-bottom: 200px;
+}
+.et-hero-tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  color: #ffffff;
+  letter-spacing: 0.1rem;
+  transition: all 0.5s ease;
+  font-size: 0.8rem;
+}
+.et-hero-tab:hover {
+  color: rgb(0, 0, 0);
+  background: rgba(209, 34, 34, 0.8);
+  transition: all 0.5s ease;
+}
+.et-hero-tab-slider {
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 6px;
+  background: #d52727;
+  transition: left 0.3s ease;
+  
+}
+@media (min-width: 800px) {
+  .et-hero-tabs h1, .et-slide h1 {
+      font-size: 3rem;
+ }
+  .et-hero-tabs h3, .et-slide h3 {
+      font-size: 1rem;
+ }
+  .et-hero-tab {
+      font-size: 1rem;
+ }
+}

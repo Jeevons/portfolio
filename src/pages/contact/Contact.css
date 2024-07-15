@@ -1,0 +1,294 @@
+.contact {
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.contact-content {
+  max-width: 800px;
+  text-align: center;
+}
+
+.contact-content h2 {
+  font-size: 4rem;
+  margin-bottom: 10px;
+  font-family: var(--fontFamily-Goffik);
+}
+
+.contact-content p {
+  font-size: .7rem;
+
+}
+
+.contact-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 30px;
+  padding: 0 200px;  
+}
+
+.contact-container .contactInfo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+.contact-container .contactInfo .infoBox {
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+  /* align-items: center; */
+  cursor: pointer;
+}
+
+.contact-container .contactInfo .infoBox .infoIcon {
+  position: relative;
+  min-width: 60px;
+  height: 60px;
+  background: repeating-conic-gradient(
+    from 30deg,
+    #f5fb 0%,
+    #f5fb 10%,
+    transparent 10%,
+    transparent 50%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-container .contactInfo .infoBox .infoIcon::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-conic-gradient(
+    from 117deg,
+    #f5fb 0%,
+    #f5fb 10%,
+    transparent 10%,
+    transparent 50%
+  );
+
+}
+
+.contact-container .contactInfo .infoBox .infoIcon::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background: black;
+}
+
+.contact-container .contactInfo .infoBox .infoIcon b {
+  position: absolute;
+  inset: 8px;
+  background: #f5fb;
+  z-index: 2;
+}
+
+.contact-container .contactInfo .infoBox .infoIcon i {
+  position: relative;
+  z-index: 10000;
+  color: black;
+  font-size: .8rem;
+}
+
+.contact-container .contactInfo .infoBox .text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  font-size: .7rem;
+  font-family: var(--fontFamily-Formula-Light);
+  text-transform: uppercase;
+}
+
+.contact-container .contactInfo .infoBox .text h3{
+  margin-bottom: 5px;
+  color: #f5fb;
+}
+
+.contact-container .contactInfo .txt {
+  margin-top: 50px;
+  font-size: 1rem;
+  border-left: 100px solid #f5fb;
+  padding-left: 10px;
+  line-height: 1em;
+  font-family: var(--fontFamily-Goffik);
+}
+
+.contact-container .contactInfo .sci {
+  position: relative;
+  display: flex;
+  gap: 30px;
+  margin: 20px 0;
+
+}
+
+.contact-container .contactInfo .sci li a {
+  font-size: 1rem;
+  transition: 0.25s;
+}
+
+.contact-container .contactInfo .sci li a:hover {
+  color: #f5fb;
+  filter: drop-shadow(0 0 5px #e5e6dd);
+}
+
+.contact-container .contactCV {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+  
+}
+
+
+
+.contact-container .contactCV .cv {
+  width: 300px;
+  height: auto;
+  
+}
+
+
+
+.contact-container .contactCV .cv img {
+  width: 100%;
+  height: auto;
+  z-index: 9999;
+  background: repeating-conic-gradient(
+    from var(--a),
+    #f5fb 0%,
+    #f5fb 10%,
+    transparent 10%,
+    transparent 50%
+  );
+  animation: animate 6s linear infinite;
+  padding: 5px;
+}
+
+.contact-container .contactCV .cv img::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-conic-gradient(
+    from var(--a),
+    #f5fb 0%,
+    #f5fb 10%,
+    transparent 10%,
+    transparent 50%
+  );
+  animation: animate 6s linear infinite;
+  animation-delay: -1.5s;
+
+}
+
+.contact-container .contactCV .cv img::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background: transparent;
+  z-index: 2;
+}
+
+@property --a {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
+@keyframes animate {
+  0% {
+    --a: 0deg;
+  }
+  100% {
+    --a: 360deg;
+  }
+}
+
+.contact-container .contactCV .downloadCv {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-container .contactCV .downloadCv a {
+  padding: 10px 20px;
+  background: #e5e6dd;
+  color: black;
+  font-size: .7rem;
+  text-transform: uppercase;
+  border-radius: 5px;
+  transition: 0.25s;
+}
+
+.contact-container .contactCV .downloadCv a:hover {
+  background: #f5fb;
+  color: #e5e6dd;
+}
+
+@media only screen and (max-width: 800px) {
+  .contact {
+    padding: 50px 20px;
+  }
+
+  .contact-content h2 {
+    font-size: 2rem;
+  }
+  .contact-container {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .contact-container .contactInfo {
+    margin-bottom: 20px;
+  }
+
+  .contact-container .contactCV {
+    margin-top: 50px;
+  }
+
+  .contact-container .contactCV .cv {
+    width: 300px;
+  }
+
+  .contact-container .contactInfo .infoBox .infoIcon {
+    min-width: 40px;
+    height: 40px;
+  }
+
+  .contact-container .contactInfo .infoBox .infoIcon b {
+    inset: 6px;
+  }
+
+  .contact-container .contactInfo .infoBox .infoIcon i {
+    font-size: .6rem;
+  }
+
+  .contact-container .contactInfo .infoBox .text {
+    font-size: .6rem;
+  }
+
+  .contact-container .contactInfo .txt {
+    font-size: .8rem;
+  }
+
+  .contact-container .contactInfo .sci li a {
+    font-size: .8rem;
+  }
+
+}

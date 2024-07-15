@@ -1,0 +1,35 @@
+header .navMenu .navList {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 45px;
+}
+
+.header-design .navMenu {
+  width: 400px;
+  background-color: #e6e5dd7b;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+}
+
+.biographieBg .navMenu {
+  width: 400px;
+  background-color: #1818187b;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+}
+
+header .navMenu .navList .navItem {
+  transition: color 0.3s ease-in-out;
+}
+
+/* header .navMenu .navList .navItem:hover {
+  color: black;
+} */
+
+@media only screen and (max-width: 500px) {
+  header .navMenu {
+    display: none;
+  }
+}

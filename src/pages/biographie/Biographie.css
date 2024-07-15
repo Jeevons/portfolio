@@ -1,0 +1,193 @@
+.section {
+  padding: 70px;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 1080px) {
+  .section {
+    padding: 20px;
+    margin-bottom: 150px;
+  }
+}
+
+@media only screen and (max-width: 790px) {
+  .section {
+    margin-bottom: 250px;
+  }
+}
+
+@media only screen and (max-width: 790px) {
+  .section {
+    margin-bottom: 350px;
+  }
+}
+
+@media only screen and (max-width: 605px) {
+  .section:nth-child(1), .section:nth-child(2), .section:nth-child(3), .section:nth-child(4) {
+    margin-bottom: 550px;
+  }
+}
+
+@media only screen and (max-width: 555px) {
+  .section:nth-child(1), .section:nth-child(2), .section:nth-child(3), .section:nth-child(4) {
+    margin-bottom: 650px;
+  }
+
+  
+}
+
+
+hr {
+  width: 375px;
+  height: 25px;
+  border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 15' width='12' height='15'%3E%3Cpath fill='none' stroke='rgba(19, 191, 191, 0.9)' stroke-width='3' d='M0,13.5c3,0,3-12,6-12s3,12,6,12'/%3E%3C/svg%3E")
+    0 0 100% repeat;
+  border-width: 0 0 15px;
+  border-style: solid;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 1080px) {
+  hr {
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  hr {
+    width: 300px;
+  }
+}
+
+.section h1 {
+  font-family: var(--fontFamily-Title);
+  font-weight: 200;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section h1 .short-word {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.section p {
+  font-size: .7rem;
+  text-align: justify;
+  color: var(--text-alice-blue);
+  line-height: 1.7;
+  position: relative;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+
+
+.section p::before,
+.section p::after {
+  content: '';
+  position: absolute;
+  border: 1px solid #ffffff;
+  width: 100px;
+  height: 1px;
+}
+
+.section p::before {
+  top: 0;
+  left: 0;
+  transform: rotate(-45deg);
+  transform-origin: top left;
+}
+
+.section p::after {
+  bottom: 0;
+  right: 0;
+  transform: rotate(45deg);
+  transform-origin: bottom right;
+}
+
+.section p:before {
+  top: -10px;
+  left: -10px;
+  width: 30px;
+  height: 30px;
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+}
+
+.section p:after {
+  bottom: -10px;
+  right: -10px;
+  width: 30px;
+  height: 30px;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+
+@media only screen and (max-width: 850px) {
+  .section h1 {
+    font-size: 1.8rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*p*/
+
+@media only screen and (max-width: 1080px) {
+  p {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .section {
+    margin-bottom: 50px;
+  }
+
+  .section:nth-child(1), .section:nth-child(2), .section:nth-child(3), .section:nth-child(4) {
+    margin-bottom: 50px;
+  }
+
+  .section h1 {
+    font-size: 1.4rem;
+  }
+
+  .section p {
+    padding: 10px;
+  }
+
+  .section p:after {
+    right: 15px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .section {
+    padding: 200px;
+    margin-bottom: 30px;
+  }
+
+  .section h1 {
+    font-size: 2.4rem;
+  }
+
+  .section p {
+    font-size: 1rem;
+  
+  }
+}

@@ -1,0 +1,273 @@
+/*-------------------------*\
+  #IMPORT FONTS LINKS
+/*-------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+/*-------------------------*\
+  #IMPORT LOCAL FONTS
+/*-------------------------*/
+
+@font-face {
+  font-family: 'Formula-Bold';
+  src: url('../public/assets/fonts/FormulaCondensed-Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Formula-Light';
+  src: url('../public/assets/fonts/FormulaCondensed-Light.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Astronaut';
+  src: url('../public/assets/fonts/Astronaut_PersonalUse.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Hoverion';
+  src: url('../public/assets/fonts/hoverion-e4xr4.ttf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Hoverion-Signature';
+  src: url('../public/assets/fonts/HoverionSignature-KV0DZ.ttf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Inspire';
+  src: url('../public/assets/fonts/Inspire-e99jm.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'BarcodeFont';
+  src: url('../public/assets/fonts/BarcodeFont.ttf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Goffik';
+  src: url('../public/assets/fonts/Goffik-O.ttf') format('opentype');
+}
+
+/*-------------------------*\
+  #CUSTOM PROPERTY
+/*-------------------------*/
+
+:root {
+  /**
+    *******COLORS*******
+    */
+
+  /** background colors **/
+
+  --bg-primary-blue: #031633;
+  --bg-primary-dark: #0a0a0a;
+
+  /** gradient bg colors */
+
+  --bg-color-smooth-dark-grey-1: radial-gradient(
+    circle,
+    rgba(53, 51, 54, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  --bg-color-smooth-dark-grey-2: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 50%,
+    rgba(45, 52, 54, 1) 100%
+  );
+
+  --bg-color-soursweet: radial-gradient(
+    circle,
+    rgba(252, 176, 69, 1) 50%,
+    rgba(255, 101, 11, 1) 100%
+  );
+  --bg-color-smooth-dark-grey-conic: conic-gradient(
+    from 338deg at 50% 50%,
+    #000000 0%,
+    #696b74 23%,
+    #000000 75%
+  );
+
+  /** text colors */
+
+  --text-white: hsla(0, 0%, 100%, 1);
+  --text-alice-blue: rgba(229, 240, 255, 0.841);
+  --text-columbia-blue: hsla(199, 69%, 84%, 1);
+  --text-wild-blue-yonder: hsla(216, 33%, 68%, 1);
+  --text-carolina-blue: hsla(199, 89%, 49%, 1);
+  --text-shadow-blue: hsla(217, 24%, 59%, 1);
+  --text-slate-gray: rgba(255, 255, 255, 0.6);
+
+  /** Gradient colors */
+
+  --gradient-1: linear-gradient(90deg, #0ea5ea, #0bd1d1 51%);
+  --gradient-2: linear-gradient(90deg, #0ea5ea, #0bd1d1 51%, #0ea5ea);
+  --gradient-3: linear-gradient(0deg, #000d1a, transparent);
+
+  /** Border colors */
+
+  --border-white: hsl(0, 0%, 100%);
+
+  /** Default colors */
+
+  --white: hsl(0, 0%, 100%, 1);
+  --black: hsl(0, 0%, 13%);
+
+  /**
+   *******TYPOGRAPHY*******
+   */
+
+  /** Font family */
+
+  --fontFamily-Title: "Montserrat", "Roboto", sans-serif;
+  --fontFamily-Body: "Atkinson Hyperlegible", "Montserrat",  "IBM Plex Sans",
+    sans-serif;
+
+    /*Special Font family*/
+  --fontFamily-Formula-Bold: "Formula-Bold", "Atkinson Hyperlegible", sans-serif;
+  --fontFamily-Formula-Light: "Formula-Light", "Atkinson Hyperlegible", sans-serif;
+  --fontFamily-Astronaut: "Astronaut", "Atkinson Hyperlegible", sans-serif;
+  --fontFamily-Hoverion: "Hoverion", "Atkinson Hyperlegible", sans-serif;
+  --fontFamily-Hoverion-Signature: "Hoverion-Signature", "Atkinson Hyperlegible", sans-serif;
+  --fontFamily-Inspire: "Inspire", "Atkinson Hyperlegible", sans-serif;
+  --fontFamily-BarcodeFont: "BarcodeFont", "Atkinson Hyperlegible", sans-serif;
+  --fontFamily-Goffik: "Goffik", "Atkinson Hyperlegible", sans-serif;
+
+  /** Font size */
+
+  --fontSize-Big-Title: 6rem;
+  --fontSize-Title: 3.5rem;
+  --fontSize-Sub-Title: 2.5rem;
+  --fontSize-text-Title: 1.3rem;
+  --fontSize-text: 0.9rem;
+
+  /** Font weight */
+  --weight-extraLight: 100;
+  --weight-light: 250;
+  --weight-medium: 300;
+  --weight-semiBold: 500;
+  --weight-bold: 700;
+  --weight-extraBold: 800;
+
+  /** Line height */
+
+  --lineHeight-1: 1.3;
+  --lineHeight-2: 1.5;
+  --lineHeight-4: 1.5;
+
+  /**
+   ******** LETTER SPACING*******
+   */
+
+  --spacing-1: 0.5px;
+  --spacing-2: 1px;
+  --spacing-3: 1.5px;
+ 
+
+  /**
+   ********BOX SHADOW*******
+   */
+  /**
+   *******BORDER RADIUS*******
+   */
+
+  --radius-6: 6px;
+  --radius-8: 8px;
+  --radius-16: 16px;
+  --radius-48: 48px;
+  --radius-circle: 50%;
+  --radius-pill: 200px;
+
+  /**
+   *******TRANSITION*******
+   */
+
+  --transition-1: 0.25s ease;
+  --transition-2: 0.5s ease;
+  --cubic-in: cubic-bezier(0.51, 0.03, 0.64, 0.28);
+  --cubic-out: cubic-bezier(0.05, 0.83, 0.52, 0.97);
+}
+/*-------------------------*\
+  #RESET
+/*-------------------------*/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+img,
+span,
+input,
+button,
+ion-icon {
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  height: auto;
+}
+
+input,
+button {
+  background: none;
+  border: none;
+  font: inherit;
+  color: inherit;
+}
+
+input {
+  width: 100%;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+  background-color: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #24262c;
+  border: 0.28rem solid #000000;
+  border-radius: 100vw;
+  transition: background 0.7s ease;
+  cursor: grab;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #000000;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #40444f;
+}
+
+html,body {
+  font-size: 24px;
+  width: 100%;
+  /* min-height: 100%; */
+  /* background-color: #09090c;  */
+}
+

@@ -1,0 +1,118 @@
+.FullpageWrapper {
+  width: 100%;
+  /* background-color: #080808; */
+  padding: 50px 200px;
+  position: relative;
+}
+
+.FullpageWrapper .navButton-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999999;
+  pointer-events: none;
+}
+
+
+.FullpageWrapper .navButton-container .navButton-grid {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  display: grid;
+  grid-gap: .8rem;
+}
+
+.FullpageWrapper .navButton-container .navButton-grid .navButton {
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.434);
+  border-radius: 50%;
+  cursor: pointer;
+  pointer-events: all;
+  position: relative;
+}
+
+.FullpageWrapper .navButton-container .navButton-grid .navButton::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  background-color: transparent;
+  z-index: -1;
+}
+
+.FullpageWrapper .navButton-container .navButton-grid .navButton.active {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.FullpageWrapper .navButton-container .navButton-grid .navButton:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.FullpageWrapper #sections {
+  width: 100%;
+  /* background-color: blue; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  
+}
+
+.FullpageWrapper #sections .section {
+  width: 100%;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  /* background-color: red; */
+}
+
+
+
+
+
+/* .FullpageWrapper #sections .s2 {
+  background-color: green;
+}
+
+.FullpageWrapper #sections .s3 {
+  background-color: yellow;
+}
+
+.FullpageWrapper #sections .s4 {
+  background-color: rgb(230, 0, 255);
+} */
+
+
+@media only screen and (max-width: 1250px) {
+  .FullpageWrapper {
+    padding: 80px 50px;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .FullpageWrapper .navButton-container {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .FullpageWrapper {
+    padding: 80px 0;
+  }
+
+  .FullpageWrapper #sections .section {
+    justify-content: flex-start;
+    height: auto;
+  }
+}
+

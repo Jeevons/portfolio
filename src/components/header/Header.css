@@ -1,0 +1,26 @@
+header {
+  position: fixed;
+  width: 100%;
+  padding: 25px 25px;
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+  z-index: 6999;
+  text-transform: uppercase;
+  background-color: black;
+}
+
+.header-design {
+  background-color: transparent;
+  color: black;
+}
+
+header .logo {
+  width: 130px;
+  height: auto;
+}
+
+header .logo img {
+  width: 100%;
+  height: auto;
+}

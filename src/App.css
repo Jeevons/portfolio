@@ -1,0 +1,22 @@
+#root {
+  width: 100%;
+  font-family: var(--fontFamily-Body);
+  font-size: .6rem;
+  letter-spacing: var(--spacing-3);
+  position: relative;
+  /* background-color: #000000; */
+}
+
+.designRoot {
+  background-color: #e6e5dd;
+  color: black;
+}
+
+.transparentHeader .header-fixed {
+  background-color: transparent;
+}
+
+.biographieBg {
+  background-color: #080808;
+  color: #e5e6dd;
+}

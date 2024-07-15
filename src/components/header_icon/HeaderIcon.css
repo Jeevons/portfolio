@@ -1,0 +1,58 @@
+.nav-but-wrap {
+  position: relative;
+  transition: all 0.3s ease-out;
+}
+
+.menu-icon {
+  height: 30px;
+  width: 30px;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  display: block;
+}
+
+.menu-icon__line {
+  height: 2px;
+  width: 30px;
+  display: block;
+  background-color: #fff;
+  margin-bottom: 7px;
+  cursor: pointer;
+  transition: background-color .5s ease, transform .2s ease;
+}
+
+.menu-icon__line-designPage {
+  background-color: #000;
+}
+
+/* .menu-icon:hover .menu-icon__line-designPage {
+  background-color: #fff;
+
+}
+
+.menu-icon:hover .menu-icon__line {
+  background-color: rgb(255, 255, 255);
+} */
+
+@media only screen and (max-width: 500px) {
+  .menu-icon:hover .menu-icon__line {
+    background-color: rgb(255, 0, 0);
+  }
+}
+
+.menu-icon__line-left {
+  width: 16.5px;
+  transition: all 200ms linear;
+}
+
+.menu-icon__line-right {
+  width: 16.5px;
+  float: right;
+  transition: all 200ms linear;
+}
+
+.menu-icon:hover .menu-icon__line-left,
+.menu-icon:hover .menu-icon__line-right {
+  width: 30px;
+}
