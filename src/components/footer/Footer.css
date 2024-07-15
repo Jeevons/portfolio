@@ -231,9 +231,9 @@
 
 .footer-designPage {
   background-color: #e6e5dd;
-  color: black;
+
 }
 
-.footer-designPage .sitemap-header h1, .footer-designPage .sitemap .sitemap-body .sitemap-list .sitemap-item .sitemap-link, .footer-designPage .footer-content .footer-press h2, .footer-designPage .footer-content .footer-copyright p, .footer-designPage .footer-content .footer-adress .adress-list, .footer-designPage .footer-content .footer-privacy .privacy-item, .footer-designPage .footer-content .footer-social .social-list {
+/* .footer-designPage .sitemap-header h1, .footer-designPage .sitemap .sitemap-body .sitemap-list .sitemap-item .sitemap-link, .footer-designPage .footer-content .footer-press h2, .footer-designPage .footer-content .footer-copyright p, .footer-designPage .footer-content .footer-adress .adress-list, .footer-designPage .footer-content .footer-privacy .privacy-item, .footer-designPage .footer-content .footer-social .social-list {
   color: black;
-}
+} */

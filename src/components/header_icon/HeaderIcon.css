@@ -22,7 +22,7 @@
   transition: background-color .5s ease, transform .2s ease;
 }
 
-.designRoot .menu-icon__line {
+.designRoot .nav-but-wrap .menu-icon .menu-icon__line {
   background-color: #000;
 }
 
