@@ -6,7 +6,7 @@ header .navMenu .navList {
   gap: 45px;
 }
 
-.header-design .navMenu {
+.designRoot .navMenu {
   width: 400px;
   background-color: #e6e5dd7b;
   border-radius: 12px;

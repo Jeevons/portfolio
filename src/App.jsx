@@ -48,7 +48,6 @@ const App = () => {
     bodyElement.className = classesToAdd.join(' ');
 
     return () => {
-      // Optionally, clean up the class names when the component is unmounted or before the next effect is run
       bodyElement.className = '';
     };
   }, [location.pathname]);
