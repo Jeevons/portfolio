@@ -4,12 +4,13 @@
   font-size: .6rem;
   letter-spacing: var(--spacing-3);
   position: relative;
+  color: #080808;
   /* background-color: #000000; */
 }
 
 .designRoot {
   background-color: #e6e5dd;
-  color: #080808;
+  
 }
 
 .transparentHeader .header-fixed {
@@ -18,4 +19,5 @@
 
 .biographieBg {
   background-color: #080808;
+  color: aliceblue;
 }
