@@ -36,7 +36,7 @@ const Presentation = () => {
         </div>
         <div className="right box img">
           <img
-            src="public/assets/images/projets/cartoonJee2.png"
+            src="./assets/images/projets/cartoonJee2.png"
             alt="presentation"
           />
         </div>

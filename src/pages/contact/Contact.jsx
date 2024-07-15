@@ -39,10 +39,10 @@ const Contact = () => {
         </div>
         <div className="contactCV">
           <div className="cv">
-            <img src="public/assets/images/cv/cv.png" alt="Jeevons Cv" />
+            <img src="./assets/images/cv/cv.png" alt="Jeevons Cv" />
           </div>
           <div className="downloadCv">
-            <a href="public/assets/images/cv/creativeCv_Jeevons3.0.pdf"  download>Télécharger CV</a>
+            <a href="./assets/images/cv/creativeCv_Jeevons3.0.pdf"  download>Télécharger CV</a>
           </div>
         </div>
       </div>

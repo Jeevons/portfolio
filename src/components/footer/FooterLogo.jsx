@@ -4,7 +4,7 @@ import "./Footer.css";
 const FooterLogo = () => (
   <div className="footer-logo">
     <Link to="/" className="logo hover-target">
-      <img src="/assets/logos/jeevonsLogo.png" alt="Jeevons Logo" />
+      <img src="./assets/logos/jeevonsLogo.png" alt="Jeevons Logo" />
     </Link>
   </div>
 );
