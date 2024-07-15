@@ -19,5 +19,5 @@
 
 .biographieBg {
   background-color: #080808;
-  color: aliceblue;
+  color: aliceblue !important;
 }
