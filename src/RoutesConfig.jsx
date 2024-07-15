@@ -7,6 +7,7 @@ import Contact from './pages/contact/Contact';
 import Projets from './pages/projets/Projets';
 import Programming from './pages/programming/Programming';
 import Design from './pages/design/Design';
+import Privacy from './pages/privacy/Privacy'
 
 const RoutesConfig = () => {
   return (
@@ -19,6 +20,7 @@ const RoutesConfig = () => {
       <Route path="/projets" element={<Projets />} />
       <Route path="/biographie" element={<Biographie />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/privacy" element={<Privacy />} />
     </Routes>
   );
 };

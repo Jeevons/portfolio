@@ -11,7 +11,7 @@ const SocialLinks = () => (
     <ul className="social-list">
       {socialItems.map((item, index) => (
         <li className="social-item" key={index}>
-          <Link to={item.path} className="social-link hover-target">
+          <Link to={item.path} className="social-link hover-target" target="_blank">
             {item.label}
           </Link>
         </li>

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import "./Footer.css";
 
 const privacyItems = [
-  { path: "", label: "Politique de confidentialité" },
+  { path: "/privacy", label: "Politique de confidentialité" },
   { path: "/biographie", label: "Biographie" },
 ];
 

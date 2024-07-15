@@ -34,9 +34,8 @@ const Contact = () => {
           </div>
           <h3 className="txt">Suivez moi sur les réseaux</h3>
           <ul className='sci'>
-            <li><a href="#"><i className="fa-brands fa-tiktok"></i></a></li>
-            <li><a href="#"><i className="fa-brands fa-instagram"></i></a></li>
-            <li><a href="#"><i className="fa-brands fa-twitter"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/jeevons-eya-jr-iq-3660a7297/"><i className="fa-brands fa-linkedin" target="_blank"></i></a></li>
+            <li><a href="https://www.instagram.com/jeevons__?igsh=NDh3eWYyaXE2MHl5&utm_source=qr" target="_blank"><i className="fa-brands fa-instagram"></i></a></li>
           </ul>
         </div>
         <div className="contactCV">
@@ -44,7 +43,7 @@ const Contact = () => {
             <img src={`${basePath}assets/images/cv/cv.png`} alt="Jeevons Cv" />
           </div>
           <div className="downloadCv">
-            <a href={`${basePath}assets/images/cv/creativeCv_Jeevons3.0.pdf`} download>Télécharger CV</a>
+            <a href={`${basePath}assets/images/cv/creativeCv_Jeevons3.0.pdf`}  target="_blank" download>Télécharger CV</a>
           </div>
         </div>
       </div>

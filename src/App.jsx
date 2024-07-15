@@ -26,6 +26,8 @@ const App = () => {
       "/projets": "Projets",
       "/biographie": "Biographie",
       "/contact": "Contact",
+      "/privacy": "Politique de confidentialité"
+
     };
 
     document.title = pathNameToTitle[location.pathname] || "My Website";
