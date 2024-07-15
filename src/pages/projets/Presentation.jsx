@@ -24,7 +24,9 @@ const Presentation = () => {
 
           <div className="wrapper">
             <div className="link_wrapper">
-              <Link to="/biographie" className="readMoreBtn">Hover Me!</Link>
+              <Link to="/biographie" className="readMoreBtn">
+                Biographie
+              </Link>
               <div className="icon">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
