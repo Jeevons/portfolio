@@ -97,7 +97,7 @@
 
 .contact-container .contactInfo .infoBox .infoIcon i {
   position: relative;
-  z-index: 10000;
+  z-index: 10;
   color: black;
   font-size: .8rem;
 }
@@ -168,7 +168,7 @@
 .contact-container .contactCV .cv img {
   width: 100%;
   height: auto;
-  z-index: 9999;
+  z-index: 999;
   background: repeating-conic-gradient(
     from var(--a),
     #f5fb 0%,
