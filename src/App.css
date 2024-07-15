@@ -5,7 +5,6 @@
   letter-spacing: var(--spacing-3);
   position: relative;
   color: #080808;
-  /* background-color: #000000; */
 }
 
 .designRoot {
@@ -17,7 +16,10 @@
   background-color: transparent;
 }
 
-.biographieBg {
+.biographieBg #root {
   background-color: #080808;
+}
+
+.biographieBg #root {
   color: aliceblue !important;
 }
