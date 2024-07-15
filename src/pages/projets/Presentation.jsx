@@ -9,7 +9,7 @@ const Presentation = () => {
       <div className="pres-container">
         <div className="left box">
           <div className="title">
-            <h1>Salut, moi c&apos;est Jevons</h1>
+            <h1>Salut, moi c&apos;est Jeevons</h1>
           </div>
           <div className="subtitle">
             <h3>Développeur Web en devenir</h3>
